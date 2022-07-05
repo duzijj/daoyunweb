@@ -15,8 +15,8 @@ def send_message(message:str, phone:str):
       # 您也可以直接在代码中写入密钥对，但需谨防泄露，不要将代码复制、上传或者分享给他人
       # CAM 密钥查询：https://console.cloud.tencent.com/cam/capi
     
-      cred = credential.Credential("AKIDUjtqXyh8nEPTNYxYvXu34mHCUUGpqfrs",
-                                   "e3KlxuV2PXdUaUoyt5KUREsItFGd9jdt")
+      cred = credential.Credential("xxx",
+                                   "xxx")
       # cred = credential.Credential(
       #     os.environ.get(""),
       #     os.environ.get("")
@@ -25,11 +25,11 @@ def send_message(message:str, phone:str):
       httpProfile = HttpProfile()
       httpProfile.reqMethod = "POST"  # POST 请求（默认为 POST 请求）
       httpProfile.reqTimeout = 30    # 请求超时时间，单位为秒（默认60秒）
-      httpProfile.endpoint = "sms.tencentcloudapi.com"  # 指定接入地域域名（默认就近接入）
+      httpProfile.endpoint = "xxx"  # 指定接入地域域名（默认就近接入）
        # 非必要步骤:
       # 实例化一个客户端配置对象，可以指定超时时间等配置
       clientProfile = ClientProfile()
-      clientProfile.signMethod = "TC3-HMAC-SHA256"  # 指定签名算法
+      clientProfile.signMethod = "xxx"  # 指定签名算法
       clientProfile.language = "en-US"
       clientProfile.httpProfile = httpProfile
        # 实例化 SMS 的 client 对象
