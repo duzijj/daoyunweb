@@ -47,7 +47,7 @@ def send_message(message:str, phone:str):
       # 短信控制台：https://console.cloud.tencent.com/smsv2
       # sms helper：https://cloud.tencent.com/document/product/382/3773
        # 短信应用 ID: 在 [短信控制台] 添加应用后生成的实际 SDKAppID，例如1400006666
-      req.SmsSdkAppid = "1400509102"
+      req.SmsSdkAppid = "xxx"
       # 短信签名内容: 使用 UTF-8 编码，必须填写已审核通过的签名，可登录 [短信控制台] 查看签名信息
       req.Sign = "20级工程实践2班12组"
       # 短信码号扩展号: 默认未开通，如需开通请联系 [sms helper]
@@ -60,7 +60,7 @@ def send_message(message:str, phone:str):
       # 例如+8613711112222， 其中前面有一个+号 ，86为国家码，13711112222为手机号，最多不要超过200个手机号
       req.PhoneNumberSet = ["+86" + phone]
       # 模板 ID: 必须填写已审核通过的模板 ID，可登录 [短信控制台] 查看模板 ID
-      req.TemplateID = "935490"
+      req.TemplateID = "xxx"
       # 模板参数: 若无模板参数，则设置为空
       req.TemplateParamSet = [message]
         # 通过 client 对象调用 SendSms 方法发起请求。注意请求方法名与请求对象是对应的
